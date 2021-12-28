@@ -230,17 +230,18 @@
 
 
   <!-- Remotes -->
-  <remote name="kghub" fetch="https://github.com/subhajeetmuhuri" revision="sc" />
+  <remote name="kghub" fetch="https://github.com/risawitama" revision="sc" />
   <remote name="kglab" fetch="https://gitlab.com/subhajeetmuhuri" revision="sc" />
   <remote name="los" fetch="https://github.com/LineageOS" revision="lineage-19.0" />
   <remote name="stuff" fetch="https://github.com/random-aosp-stuff" revision="sc" />
 
 
   <!-- Device specific repos -->
-  <project name="android_device_xiaomi_surya" path="device/xiaomi/surya" remote="kghub" />
-  <project name="android_kernel_xiaomi_surya" path="kernel/xiaomi/surya" remote="kghub" />
-  <project name="proprietary_vendor_xiaomi_surya" path="vendor/xiaomi/surya" remote="kghub" />
-  <project name="proprietary_firmware_xiaomi_surya" path="firmware/xiaomi/surya" remote="kglab" />
+  <project name="android_device_xiaomi_onclite" path="device/xiaomi/onclite" remote="kghub" revision="sc" />
+  <project name="android_kernel_xiaomi_onclite" path="kernel/xiaomi/onclite" remote="kghub" revision="lineage-19.0" clone-depth="1" />
+  <project name="android_vendor_xiaomi_onclite" path="vendor/xiaomi/onclite" remote="kghub" revision="twelve" clone-depth="1" />
+  <!--- <project name="proprietary_firmware_xiaomi_onclite" path="firmware/xiaomi/onclite" remote="kglab" /> -->
+  <project path="device/qcom/sepolicy-legacy-um" name="risawitama/device_qcom_sepolicy-legacy-um" remote="github" revision="sushi" />
 
 
   <!-- AOSP forks -->
@@ -276,6 +277,7 @@
 
   <remove-project name="platform/prebuilts/clang/host/linux-x86" />
   <project name="android_prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="kglab" clone-depth="1" />
+  <project name="risawitama/proton-clang.git" path="prebuilts/clang/host/linux-x86/clang-proton-12" remote="github" revision="20210123" clone-depth="1" />
 
   <remove-project name="platform/system/apex" />
   <project path="system/apex" name="android_system_apex" remote="stuff" />
@@ -340,9 +342,10 @@
   <project name="android_hardware_xiaomi" path="hardware/xiaomi" remote="stuff" />
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="stuff" />
 
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="stuff" revision="lineage-19.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="stuff" revision="sc-caf-sm8150" />
-  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" remote="stuff" revision="lineage-19.0-caf" />
+  <project path="hardware/qcom-caf/msm8996/audio" name="risawitama/hardware_qcom_audio" remote="github" revision="lineage-18-1-caf-msm8996" />
+  <project path="hardware/qcom-caf/msm8996/display" name="risawitama/hardware_qcom_display" remote="github" revision="sushi" />
+  <project path="hardware/qcom-caf/msm8996/media" name="risawitama/hardware_qcom_media" remote="github" revision="lineage-18-1-caf-msm8996" />
+  <project path="hardware/qcom-caf/wlan" name="risawitama/hardware_qcom-caf_wlan" remote="github" revision="twelve" />
 
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="stuff" />
 
@@ -370,15 +373,13 @@
 
   <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="los" revision="lineage-18.1" >
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
     <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
     <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
   </project>
-
-  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="los" revision="lineage-18.1-caf-sm8150" />
 
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" remote="los" revision="lineage-18.1" />
 
