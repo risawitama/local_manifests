@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <!-- Remote -->
-        <remote name="merlinx" fetch="https://github.com/Yourfurina" clone-depth="1" />
-        <remote name="los" fetch="https://github.com/LineageOS" clone-depth="1" />
+        <remote name="me" fetch="https://github.com/risawitama" clone-depth="1" />
 
         <!-- Trees -->
-  <project path="device/xiaomi/merlinx" name="android_device_xiaomi_merlinx" remote="merlinx" revision="lineage-21" />
-  <project path="device/xiaomi/mt6768-common" name="android_device_xiaomi_mt6768-common" remote="merlinx" revision="lineage-21" />
-  <project path="vendor/xiaomi/merlinx" name="proprietary_vendor_xiaomi_merlinx" remote="merlinx" revision="lineage-21" />
-  <project path="vendor/xiaomi/mt6768-common" name="proprietary_vendor_xiaomi_mt6768-common" remote="merlinx" revision="lineage-21" />
-  <project path="kernel/xiaomi/mt6768" name="kernel_xiaomi_mt6768" remote="merlinx" revision="lineage-21" />
-  
-        <!-- sepolicy -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek" remote="los" revision="lineage-21" />
-  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="los" revision="lineage-21" />
+        <project path="device/xiaomi/onclite" name="android_device_xiaomi_onclite" remote="me" revision="lineage-21" />
+        <project path="kernel/xiaomi/onclite" name="kxo" remote="me" revision="lineage-21" />
+        <project path="vendor/xiaomi/onclite" name="proprietary_vendor_xiaomi_onclite" remote="me" revision="lineage-21" />
 </manifest>
