@@ -3,8 +3,12 @@
         <!-- Remote -->
         <remote name="me" fetch="https://github.com/risawitama" clone-depth="1" />
 
-        <!-- Trees -->
+        <!-- Onclite -->
         <project path="device/xiaomi/onclite" name="android_device_xiaomi_onclite" remote="me" revision="lineage-21" />
         <project path="kernel/xiaomi/onclite" name="kxo" remote="me" revision="lineage-21" />
         <project path="vendor/xiaomi/onclite" name="proprietary_vendor_xiaomi_onclite" remote="me" revision="lineage-21" />
+
+        <!-- Vendor -->
+        <remove-project path="vendor/aosp" />
+        <project path="vendor/aosp" name="vendor_aosp" remote="me" revision="fourteen" />
 </manifest>
