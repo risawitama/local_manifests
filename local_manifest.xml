@@ -10,6 +10,9 @@
         <project path="kernel/xiaomi/onclite" name="kxo" remote="me" revision="lineage-21" />
         <project path="vendor/xiaomi/onclite" name="proprietary_vendor_xiaomi_onclite" remote="me" revision="lineage-21" />
 
+        <!-- Clang -->
+        <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="android_prebuilts_clang_kernel_linux-x86_clang-r416183b" remote="los" revision="lineage-20.0" />
+
         <!-- Xiaomi Stuff -->
         <project path="hardware/xiaomi" name="hardware_xiaomi" remote="pos" revision="fourteen" />
 
