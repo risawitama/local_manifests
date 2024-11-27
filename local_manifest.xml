@@ -3,10 +3,10 @@
         <!-- Remote -->
         <remote name="me" fetch="https://github.com/risawitama" clone-depth="1" />
         <remote name="los" fetch="https://github.com/LineageOS" clone-depth="1" />
-        <remote name="mtx" fetch="https://github.com/ProjectMatrixx" clone-depth="1" />
+        <remote name="rtoss" fetch="https://github.com/RisingTechOSS" clone-depth="1" />
 
         <!-- Onclite -->
-        <project path="device/xiaomi/onclite" name="android_device_xiaomi_onclite" remote="me" revision="matrixx" />
+        <project path="device/xiaomi/onclite" name="android_device_xiaomi_onclite" remote="me" revision="rising" />
         <project path="kernel/xiaomi/onclite" name="kxo" remote="me" revision="lineage-21" />
         <project path="vendor/xiaomi/onclite" name="proprietary_vendor_xiaomi_onclite" remote="me" revision="lineage-21" />
 
