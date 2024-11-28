@@ -19,8 +19,6 @@
         <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="los" revision="lineage-21" />
 
         <!-- Vendor -->
-        <!-- 
-        <remove-project path="vendor/aosp" />
-        <project path="vendor/aosp" name="vendor_aosp" remote="me" revision="fourteen" />
-        -->
+        <remove-project path="vendor/lineage" />
+        <project path="vendor/lineage" name="android_vendor_lineage" remote="me" revision="fourteen" />
 </manifest>
