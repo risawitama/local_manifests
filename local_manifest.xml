@@ -1,33 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <!-- Remote -->
-        <remote name="me" fetch="https://github.com/risawitama" clone-depth="1" />
+        <remote name="risa" fetch="https://github.com/risawitama" clone-depth="1" />
         <remote name="oncs" fetch="https://github.com/onclite" clone-depth="1" />
-        <!--
-        <remote name="los" fetch="https://github.com/LineageOS" clone-depth="1" />
-        -->
-        <remote name="crdroid" fetch="https://github.com/crdroidandroid" clone-depth="1" />
+        <remote name="crdr" fetch="https://github.com/crdroidandroid" clone-depth="1" />
 
         <!-- Onclite -->
-        <project path="device/xiaomi/onclite" name="hadad_device_xiaomi_onclite" remote="me" revision="lineage-22.0" />
-        <project path="kernel/xiaomi/onclite" name="kxo" remote="me" revision="lineage-22.0" />
-        <project path="vendor/xiaomi/onclite" name="hadad_vendor_xiaomi_onclite" remote="me" revision="lineage-22.0" />
+        <project path="device/xiaomi/onclite" name="hadad_device_xiaomi_onclite" remote="risa" revision="lineage-22.0" />
+        <project path="kernel/xiaomi/onclite" name="kxo" remote="risa" revision="lineage-22.0" />
+        <project path="vendor/xiaomi/onclite" name="hadad_vendor_xiaomi_onclite" remote="risa" revision="lineage-22.0" />
         
         <!-- Sign Key -->
         <project path="vendor/lineage-priv/keys" name="android_vendor_lineage-priv_keys" remote="oncs" revision="master" />
 
         <!-- Clang -->
-        <!--
-        <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="android_prebuilts_clang_kernel_linux-x86_clang-r416183b" remote="los" revision="lineage-20.0" />
-        -->
         <project path="prebuilts/clang/kernel/linux-x86/clang-proton" name="proton-clang" remote="oncs" revision="20210123" />
 
         <!-- Xiaomi Stuff -->
-        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="crdroid" revision="15.0" />
+        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="crdr" revision="15.0" />
 
-        <!-- Vendor -->
-        <!--
-        <remove-project path="vendor/lineage" />
-        <project path="vendor/lineage" name="android_vendor_lineage" remote="me" revision="fourteen" />
-        -->
 </manifest>
