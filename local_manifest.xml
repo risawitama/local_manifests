@@ -13,9 +13,6 @@
         <!-- Sign Key -->
         <project path="vendor/lineage-priv/keys" name="android_vendor_lineage-priv_keys" remote="oncs" revision="master" />
 
-        <!-- Clang -->
-        <project path="prebuilts/clang/kernel/linux-x86/clang-r416183b" name="clang-r416183b" remote="risa" revision="11.0" />
-
         <!-- Xiaomi Stuff -->
         <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="crdr" revision="14.0" />
 </manifest>
