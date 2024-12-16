@@ -3,7 +3,6 @@
         <!-- Remote -->
         <remote name="risa" fetch="https://github.com/risawitama" clone-depth="1" />
         <remote name="oncs" fetch="https://github.com/onclite" clone-depth="1" />
-        <remote name="crdr" fetch="https://github.com/crdroidandroid" clone-depth="1" />
 
         <!-- Onclite -->
         <project path="device/xiaomi/onclite" name="android_device_xiaomi_onclite" remote="risa" revision="lineage-21" />
@@ -14,5 +13,5 @@
         <project path="vendor/lineage-priv/keys" name="android_vendor_lineage-priv_keys" remote="oncs" revision="master" />
 
         <!-- Xiaomi Stuff -->
-        <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="crdr" revision="14.0" />
+        <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-21" clone-depth="1"/>
 </manifest>
