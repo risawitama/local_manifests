@@ -1,36 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- Remote -->
-    <remote name="risa" 
-            fetch="https://github.com/risawitama" 
+    <remote name="risa"
+            fetch="https://github.com/risawitama"
             clone-depth="1" />
-    <remote name="oncs" 
-            fetch="https://github.com/onclite" 
+    <remote name="oth"
+            fetch="https://github.com"
             clone-depth="1" />
-    <remote name="crdr" 
-            fetch="https://github.com/crdroidandroid" 
-            clone-depth="1" />
+
     <!-- Onclite -->
     <project path="device/xiaomi/onclite" 
-             name="dxo15" 
-             remote="risa" 
-             revision="lineage-22.0" />
+             name="Dhina17/android_device_xiaomi_onclite" 
+             remote="oth" 
+             revision="lineage-16.0" />
     <project path="kernel/xiaomi/onclite" 
-             name="kxo" 
-             remote="risa" 
-             revision="lineage-22.0" />
+             name="Dhina17/android_kernel_xiaomi_onclite" 
+             remote="oth" 
+             revision="lineage-17.1-old" />
     <project path="vendor/xiaomi/onclite" 
-             name="vxo15" 
-             remote="risa" 
-             revision="lineage-22.0" />
-    <!-- Clang -->
-    <project path="prebuilts/clang/kernel/linux-x86/clang-proton" 
-             name="proton-clang" 
-             remote="oncs" 
-             revision="20210123" />
-    <!-- Xiaomi Stuff -->
-    <project path="hardware/xiaomi" 
-             name="android_hardware_xiaomi" 
-             remote="crdr" 
-             revision="15.0" />
+             name="Dhina17/android_vendor_xiaomi_onclite" 
+             remote="oth" 
+             revision="lineage-16.0" />
+             
+    <!-- Other -->
+    
 </manifest>
