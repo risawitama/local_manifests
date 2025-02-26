@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- Remote -->
-    <remote name="risa"
+    <remote name="ica"
             fetch="https://github.com/risawitama"
-            clone-depth="1" />
-    <remote name="oth"
-            fetch="https://github.com"
             clone-depth="1" />
 
     <!-- Onclite -->
     <project path="device/xiaomi/onclite" 
-             name="Dhina17/android_device_xiaomi_onclite" 
-             remote="oth" 
-             revision="lineage-16.0" />
+             name="adxo" 
+             remote="ica" 
+             revision="pie" />
     <project path="kernel/xiaomi/onclite" 
-             name="Dhina17/android_kernel_xiaomi_onclite" 
-             remote="oth" 
-             revision="lineage-17.1-old" />
+             name="akxo" 
+             remote="ica" 
+             revision="main" />
     <project path="vendor/xiaomi/onclite" 
-             name="Dhina17/android_vendor_xiaomi_onclite" 
-             remote="oth" 
-             revision="lineage-16.0" />
+             name="avxo" 
+             remote="ica" 
+             revision="pie" />
              
     <!-- Other -->
+    <project path="prebuilts/clang/kernel/linux-x86/clang-proton"
+             name="clang-proton"
+             remote="ica"
+             revision="20210123" />
     
 </manifest>
