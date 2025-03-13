@@ -24,5 +24,9 @@
              name="clang-proton"
              remote="ica"
              revision="20210123" />
+    <project path="packages/resources/devicesettings"
+	     name="android_packages_resources_devicesettings"
+	     remote="ica"
+    	     revision="pie" />
     
 </manifest>
